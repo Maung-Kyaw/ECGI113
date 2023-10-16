@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int x,y;
+    int i,gcd;
+    printf("Input two number:");
+    scanf("%d,%d",&x,&y);
+    printf("The common divosors are :");
+    for(i=1;i<20;i++){
+        if(x%i==0 && y%i==0){
+            printf("%3d",i);
+            gcd = i;
+            
+        }
+        
+    }
+    printf("\nThe gcd of %d and %d is %d",x,y,gcd);
+    
+    
+    
+}
