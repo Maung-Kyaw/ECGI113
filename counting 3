@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+ //Assignment 5 counting number int32_t
+    int x,i,count;
+    count = 0;
+    printf("Input a number:");
+    scanf("%d",&x);
+    while(x>0){
+        if(x%10==3) count++;
+        x/=10;
+    }
+    printf("There are %d 3s in this number\n",count);
+}
